@@ -1,7 +1,7 @@
 services:
-- type: pserv
+- type: web
   name: mysql
-  plan: standard
+  plan: free
   env: docker
   autoDeploy: false
   disk:
@@ -19,6 +19,6 @@ envVarGroups:
   - key: MYSQL_USER
     value: mysql
   - key: MYSQL_PASSWORD
-    generateValue: true
+    value: qwerty
   - key: MYSQL_ROOT_PASSWORD
-    generateValue: true
+    value: qwerty
